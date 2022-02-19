@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript"></script> </head>
+<body>
+    <form name="regisztracios_form" method="POST">
+        <h1>Pizzarendelés</h1>
+    
+        <label for="teljesnev">Teljes név: </label>
+        <input id="teljesnev" type="text" placeholder="Teljesnév" name="teljesnev">
+        <input type="submit" value="Küldés"><br>
+        <br>
+        <label for="telefonszam">Telefonszám: </label>
+        <input id="telefonszam" type="number" placeholder="Telefonszám" name="telefonszam">
+        <input type="submit" value="Küldés"><br>
+        <br>
+        <label for="iranyitoszam">Irányítószám: </label>
+        <input id="iranyitoszam" type="number" placeholder="Irányítószám" name="iranyitoszam">
+        <input type="submit" value="Küldés"><br>
+        <br>
+        <label for="varos">Város: </label>
+        <input id="varos" type="text" placeholder="Város" name="varos">
+        <input type="submit" value="Küldés"><br>
+        <br>
+        <label for="utca">Utca: </label>
+        <input id="utca" type="text" placeholder="Utca" name="utca">
+        <input type="submit" value="Küldés"><br>
+        <br>
+        <label for="hazszam">Házszám: </label>
+        <input id="hazszam" type="number" placeholder="Házszám" name="hazszam">
+        <input type="submit" value="Küldés"><br>
+        <br>
+        <label for="pizzaalap">Pizzaalap</label>
+        <br>
+        <select name="pizzaalap" id="pizzaalap">
+            <option value="1">tejfölös alap</option>
+            <option value="2">paradicsomos alap</option>
+        </select>
+        <br>
+        Pizzafeltétek:
+        <br>
+        <input type="checkbox" name="pizzafeltetek[]" id="sonka" value="sonka">
+        <label for="sonka">sonka</label>
+        <input type="checkbox" name="pizzafeltetek[]" id="kukorica" value="kukorica">
+        <label for="kukorica">kukorica</label>
+        <input type="checkbox" name="pizzafeltetek[]" id="bacon" value="bacon">
+        <label for="bacon">bacon</label>
+        <input type="checkbox" name="pizzafeltetek[]" id="tojas" value="tojas">
+        <label for="tojas">tojás</label>
+        <input type="checkbox" name="pizzafeltetek[]" id="gomba" value="gomba">
+        <label for="gomba">gomba</label>
+        <br>
+        <label for="egyeb">Egyéb: </label>
+        <input id="egyeb" type="text" placeholder="Megjegyzés" name="egyeb">
+        <input type="submit" value="Küldés"><br>
+        <button id="felvetel_gomb" type="button">Felvétel</button>
+        </script>
+</body>
+</html>

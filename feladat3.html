@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+    <form action="/action_page.php">
+      <label for="usrname">Felhasználónév</label>
+      <input type="text" id="usrname" name="usrname" minlenght="5" maxlength="16" required> 
+      <input type="submit" value="Küldés"><br>
+    </form>
+  <div id="message">
+    <h3>A jelszónak a következőket kell tartalmaznia:</h3>
+    <p id="letter" class="invalid"><b>Kisbetű,</b> </p>
+    <p id="capital" class="invalid"><b>nagybetű,</b></p>
+    <p id="number" class="invalid"><b>szám,</b></p>
+    <p id="length" class="invalid">minimum <b>5 karakter.</b></p>
+  </div>
+
+  <label for="psw">Jelszó</label>
+      <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Jelszó" required>
+      <input type="submit" value="Küldés"><br>
+
+      <label for="psw">Jelszóismét</label>
+      <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Jelszóismét" required>
+      <input type="submit" value="Küldés"><br>
+
+  <form action="/action_page.php">
+  <label for="email">E-mail cím: </label>
+        <input id="email" type="email" placeholder="E-mail cím" name="email">
+        <input type="submit" value = "Küldés">
+        <br>
+  <form action="/action_page.php">
+    <label for="szuletesnap">Születésnap:</label>
+    <input type="datetime-local" id="szuletesnap" name="szuletesnap">
+    <input type="submit">
+    </form>

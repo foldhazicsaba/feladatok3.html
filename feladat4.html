@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript"></script></head>
+<body>
+    <form name="regisztracios_form" method="POST">
+        <br>
+        <label for="vezeteknev">Vezetéknév: </label>
+        <input id="vezeteknev" type="text" placeholder="Vezetéknév" name="vezeteknev">
+        <br>
+        <label for="keresztnnev">Keresztnév: </label>
+        <input id="keresztnev" type="text" placeholder="Keresztnév" name="keresztnev">
+        <br>
+        <label for="email">E-mail cím: </label>
+        <input id="email" type="email" placeholder="E-mail cím" name="email">
+        <br>
+        <label for="lakhely">Lakhely: </label>
+        <input id="lakhely" type="text" placeholder="Lakhely" name="lakhely">
+        <br>
+        Nem:
+        <br>
+        <input type="radio" name="nem" id="ferfi" value="ferfi">
+        <label for="ferfi">Férfi</label>
+        <br>
+        <input type="radio" name="nem" id="no" value="no">
+        <label for="no">Nő</label>
+        <br>
+        <label for="vegzettseg">Iskolai végzettség</label>
+        <select name="vegzettseg" id="vegzettseg">
+            <option value="1">Általános iskola</option>
+            <option value="2">Érettségi</option>
+            <option value="3">Egyetem/Főiskola</option>
+        </select>
+        <br>
+        <br>
+        Milyen háziállata van?
+        <br>
+        <input type="checkbox" name="haziallat[]" id="kutya" value="kutya">
+        <label for="kutya">Kutya</label>
+        <input type="checkbox" name="haziallat[]" id="macska" value="macska">
+        <label for="macska">Macska</label>
+        <input type="checkbox" name="haziallat[]" id="halak" value="halak">
+        <label for="halak">Halak</label>
+        <input type="checkbox" name="haziallat[]" id="madarak" value="madarak">
+        <label for="madarak">Madarak</label>
+        <input type="checkbox" name="haziallat[]" id="ragcsalo" value="ragcsalo">
+        <label for="ragcsalo">Rágcsáló</label>
+        <input type="checkbox" name="haziallat[]" id="Egyéb" value="egyeb">
+        <label for="egyeb">Egyéb</label>
+        <br>    
+        <label for="indok">Miért szeretne regisztrálni?: </label>
+        <input type="text" name="fname" required>
+        <input type="submit" value="Elküld">
+        <br> 
+        <button id="jelentkezes_gomb" type="button">Jelentkezés</button>
+        <br>    
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"style="background-color:#0000FF; width:90px;height:20px;padding:40px;">
+        Kattints ide!</div>
+
+        <script>
+        function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Elengedheted";
+        }
+
+        function mUp(obj) {
+        obj.style.backgroundColor="#00FF00";
+        obj.innerHTML="Köszönöm, hogy kitöltötted!";
+        }
+        </script>
+
+            </form>
+
+<script src="01_urlapok.js"></script>
+        
+</script>
+</body>
+</html>
